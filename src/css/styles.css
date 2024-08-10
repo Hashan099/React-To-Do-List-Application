@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  background-image: url("../images/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100dvh;
+  background-color: rgba(240, 248, 255, 0.367);
+  backdrop-filter: blur(10px);
+  padding: 3rem;
+}
+
+.todo_title {
+  color: rgb(63, 163, 230);
+  letter-spacing: 1rem;
+  margin-bottom: 2rem;
+}
+
+.todoinput_container {
+  display: flex;
+  width: 60%;
+}
+
+.todo_input {
+  padding: 0.5rem 3rem;
+  text-align: center;
+  outline: 0;
+  border: 0;
+  border-radius: 0.5rem;
+  min-width: 100%;
+  font-size: 1rem;
+}
+
+.todo_button {
+  padding: 0.8rem;
+  border: 0;
+  background-color: greenyellow;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.todoitems_container {
+  color: white;
+  margin-top: 1rem;
+  width: 40%;
+  text-align: center;
+}
+
+.todo_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding-left: 1rem;
+  background-color: rgb(63, 163, 230);
+  margin-bottom: 1rem;
+}
+
+.btn-read,
+.btn-delete {
+  padding: 1rem;
+  border: 0;
+  cursor: pointer;
+}
+
+.btn-read {
+  background-color: orange;
+}
+.btn-read:hover {
+  filter: brightness(150%);
+}
+
+.btn-delete {
+  background-color: red;
+}
+
+.btn-delete:hover {
+  filter: brightness(50%);
+}
